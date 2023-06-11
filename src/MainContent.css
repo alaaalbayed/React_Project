@@ -9,6 +9,7 @@ body {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .background-container {
@@ -24,7 +25,7 @@ body {
 
 .title {
   position: absolute;
-  top: 5%;
+  top: 4vh;
   opacity: 1;
   width: 1053px;
   height: 49px;
@@ -32,7 +33,7 @@ body {
   font-style: normal;
   font-weight: 700;
   bottom: 105.21%;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 49px;
   color: #FFFFFF;
   transform: rotate(-0.54deg);
@@ -43,7 +44,7 @@ body {
 
 .intro {
   position: absolute;
-  top: 22%;
+  top: 15vh;
   width: 843px;
   height: 314px;
   font-family: 'Montserrat';
@@ -65,7 +66,7 @@ body {
   border: none;
   color: #ffffff;
   height: 40.562747955322266px;
-  margin-top: 35px;
+  margin-top: 25px;
   width: 348px;
   left: 0px;
   border-radius: 10px;
@@ -142,7 +143,7 @@ button {
 
 #cover {
   position: absolute;
-  width: 400px;
+  width: 60vh;
   height: 11vh;
   margin-left: 30vh;
   background-color: #252A40;
@@ -151,33 +152,34 @@ button {
 }
 
 .searchBox {
-  margin-left: 265px;
+  margin-left: 40vh;
   margin-top: 10px;
   position: relative;
-  width: 210px;
+  width: 33vh;
   background: #2f3640;
   filter: drop-shadow(0px 3.27741px 6.55481px rgba(29, 28, 94, 0.24));
   transform: rotate(-0.54deg);
-  height: 40px;
+  height: 7vh;
   border-radius: 7px;
 }
 
 .searchInput {
   position: absolute;
-  width: 240px;
+  top: 1.5vh;
+  width: 25.6vh;
   padding: 0 6px;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   transition: 0.4s;
-  line-height: 40px;
-  width: 210px;
+  line-height: 4vh;
+  width: 23vh;
 }
 
 .searchButton {
   position: relative;
-  margin-left: 180px;
+  margin-left: 29vh;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 2vh;
 }
 
 .searchInput::placeholder {
@@ -196,7 +198,7 @@ ul {
 ul a {
   text-decoration: none;
   color: #fff;
-  margin: 0px 20px;
+  margin: 0px 2vh;
   text-align: center;
 }
 
@@ -210,7 +212,7 @@ ul a li {
   margin: auto;
   height: 26px;
   width: 20px;
-  margin-right: 50px;
+  margin-right: 5vh;
   cursor: pointer;
 }
 
@@ -260,95 +262,32 @@ p {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
+  .timer-container {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 
-  .background-container {
+  .timer_icon {
     background-color: transparent;
-  }
-
-  .searchBox {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .searchInput {
-    width: 100%;
-  }
-
-  .searchButton {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .logo img {
-    margin: 0;
-  }
-
-  .logo h1 {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .user-info {
-    margin: 0;
+    
   }
 
   .title {
-    width: 100%;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    position: static;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 2vh;
   }
-
   .intro {
-    position: static;
     width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; 
   }
-
-  .proceed-button {
-    margin: 0 auto;
-  }
-
-  .logo img {
-    margin-left: 0;
-    margin-right: 10px;
-  }
-
-  .logo h1 {
-    margin-left: 0;
-  }
-
-  .user-info {
-    margin-right: 0;
-  }
-
-  .search {
-    margin-bottom: 20px;
-  }
-
-  #cover {
-    margin: 0 auto;
-    transform: scale(0.4);
-  }
-
-  .searchBox {
-    margin: 0 auto;
-  }
-
-  .searchInput {
-    width: 100%;
-  }
-
-  .searchButton {
-    margin-left: 0;
+  .background-container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
   }
 }
